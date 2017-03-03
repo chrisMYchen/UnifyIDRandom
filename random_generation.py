@@ -87,7 +87,7 @@ def get_true_random_integers(n, min, max, cols, base):
     j = requests.get(url, params=params)
     #j = gen_test_input(min, max, n)
     #return random_org_to_list(j)
-    j = gen_test_input(min, max,n)
+    #j = gen_test_input(min, max,n)
     return random_org_to_list(j.text)
 
 def random_org_to_list(text):
