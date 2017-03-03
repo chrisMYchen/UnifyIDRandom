@@ -98,7 +98,7 @@ def random_org_to_list(text):
     """
     lines = text.splitlines()
     clean =  [re.split(r'\t+', x) for x in lines]
-    num_list = [[int(val.strip()) for val in x] for x in clean]
+    num_list = [[int(val.strip()) for val in x if val != ''] for x in clean]
     return num_list
 
 def gen_test_input(low, high, size):
